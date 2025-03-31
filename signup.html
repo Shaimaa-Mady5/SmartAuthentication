@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--========== meta data ===========-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--========== title & icon ===========-->
+    <title class="text-uppercase">EntryOperation</title>
+    <link rel="shortcut icon" href="imgs/2191544_key_lock_login_secret_secure_icon.ico" type="image/x-icon">
+
+        <!--========== google fonts ===========-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+      
+    <!--========== css files ===========-->
+                <!--**** font awesome ****-->
+          <link rel="stylesheet" href="css/all.min.css">
+
+                  <!--**** bootstrap ****--> 
+         <link rel="stylesheet" href="css/bootstrap.min.css"> 
+
+                  <!--**** style sheet ****-->
+          <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+   <div id="main-signup" class="d-flex justify-content-center align-items-center">
+   <div class="form mx-auto text-center ">
+    <div class="title ">
+        <h1>Sign Up</h1>
+        <p class="text-white tile-desc">It's quick and easy.</p>
+    </div>
+
+    <div class="inputs">
+       <div>
+        <input type="text" name="SignupName" id="userName" placeholder="Enter your name" class="form-control my-3">
+        <div id="alertName" class="alert d-none">Name must contain at first one capital letter then 3 to 10 small characters, "optional" space and family name (from 4 to 10 small letters)</div>
+       </div>
+       <div>
+        <input type="email" name="SignupEmail" id="userEmail" placeholder="Enter your email"  class="form-control my-3">
+        <div id="alertEmail" class="alert d-none">Email must contain 1 to 8 small letters then 1 to 3 numbers then @(yahoo or gmail).com</div>
+       </div>
+       <div>
+        <input type="password" name="SignupPassword" id="userPassword" placeholder="Enter your password"  class="form-control my-3">
+        <div id="alertPassword" class="alert d-none">Password must contain at first one capital letter then 3 to 5 small letters then 1 to 4 numbers then # or @</div>
+       </div>
+       <div class="alert fw-bold  d-none" id="warningEmptyInputs"> <i class="fa-solid fa-triangle-exclamation"></i> All inputs are required </div>
+       <div class="alert fw-bold  d-none text-success" id="successData">Success Data <i class="fa-solid fa-check"></i></div>
+       <div class="alert fw-bold  d-none" id="warningExistedEmail"> <i class="fa-solid fa-triangle-exclamation"></i> Email already exist</div>
+        <button class="btn btn-outline-info w-100 my-3" id="btnSignup">Sign Up</button>
+    </div>
+    <p class="text-white">Already have an account? <a href="index.html">Sign in</a></p>
+   </div>
+   </div>
+    
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>
